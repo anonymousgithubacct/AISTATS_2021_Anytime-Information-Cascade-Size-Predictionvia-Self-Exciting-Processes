@@ -22,7 +22,10 @@ python3 main.py --data_file_path=**include_file_name** --censoring_time="1h" --o
 In order to use different realization files, it should be saved as a `json` file with the following format:
 
 ```
-
+{ 'cid': **cascade ID**,
+  'post_time_day': ** Absolute time of posting of tweet ** 
+  'hw': list of events, where each event is a list of time and mark for that event, i.e., [[$t_0, m_0$], [$t_1, m_1$], [$t_2, m_2$], ...]
+}
 ```
 
 
